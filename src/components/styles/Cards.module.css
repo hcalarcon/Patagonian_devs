@@ -1,0 +1,98 @@
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1px;
+  margin: 8px;
+  transition: transform 0.3s ease, flex-basis 0.3s ease;
+  flex-basis: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.selected {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  z-index: 1000; /* Para que la card seleccionada se superponga a las demás */
+  flex-basis: auto; /* Ajuste automático del tamaño */
+  width: 90%;
+  max-width: 600px;
+  height: auto;
+  max-height: 80vh;
+  overflow: hidden;
+}
+
+.selected .title,
+.selected .briefDescription {
+  display: none; /* Oculta el título y la descripción breve */
+}
+
+.image {
+  width: 100%;
+  height: 40vh;
+  border-radius: 2px;
+  transition: transform 0.3s ease, opacity 0.3 ease;
+}
+
+.selected .image {
+  opacity: 0.6;
+  height: auto;
+}
+
+.title {
+  font-size: 1.5rem;
+  margin: 8px 0;
+}
+
+.briefDescription {
+  text-align: center;
+  font-size: 1rem;
+  color: #666;
+  margin: 8px 0;
+}
+
+.fullDescription {
+  font-size: 1.5rem;
+  color: #000000;
+  margin: 8px 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  text-align: center;
+}
+
+.button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 16px;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.closeButton:hover {
+  color: #ff0000;
+}

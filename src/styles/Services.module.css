@@ -1,0 +1,10 @@
+.Services {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 55px;
+}
+
+.Services h2 {
+  text-align: center;
+  padding: 8px;
+}

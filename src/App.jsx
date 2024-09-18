@@ -1,12 +1,18 @@
-import { useState } from "react";
-
 import "./App.css";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import ContacUs from "./sections/ContacUs";
+import Home from "./sections/Home";
+import Services from "./sections/Services";
 
 function App() {
   return (
     <>
-      <h1>Sitio en contrucción</h1>
-      <img src="/PatagonianDevs.svg" alt="" />
+      <Header />
+      <Home />
+      <Services />
+      <ContacUs />
+      <Footer />
     </>
   );
 }

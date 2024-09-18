@@ -1,0 +1,18 @@
+.contactUs {
+  min-height: 100vh;
+  margin-top: 20px;
+  padding: 15px;
+  padding-top: 60px;
+  align-content: space-around;
+  background: url("./contactusfondo.jpg") fixed center no-repeat;
+  background-size: cover;
+}
+
+.contactUs p {
+  text-align: center;
+  padding: 5px;
+}
+
+.contactUs h2 {
+  font-size: 30px;
+}
